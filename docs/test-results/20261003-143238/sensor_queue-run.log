@@ -1,0 +1,33 @@
+*** Booting Zephyr OS build v4.4.2 ***
+Running TESTSUITE sensor_queue_tests
+===================================================================
+START - test_data_copied
+ PASS - test_data_copied in 0.004 seconds
+===================================================================
+START - test_empty_read
+ PASS - test_empty_read in 0.001 seconds
+===================================================================
+START - test_fifo_order
+ PASS - test_fifo_order in 0.002 seconds
+===================================================================
+START - test_full_queue_rejects_new_sample
+ PASS - test_full_queue_rejects_new_sample in 0.001 seconds
+===================================================================
+START - test_ring_buffer_wraparound
+ PASS - test_ring_buffer_wraparound in 0.001 seconds
+===================================================================
+TESTSUITE sensor_queue_tests succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [sensor_queue_tests]: pass = 5, fail = 0, skip = 0, total = 5 duration = 0.009 seconds
+ - PASS - [sensor_queue_tests.test_data_copied] duration = 0.004 seconds
+ - PASS - [sensor_queue_tests.test_empty_read] duration = 0.001 seconds
+ - PASS - [sensor_queue_tests.test_fifo_order] duration = 0.002 seconds
+ - PASS - [sensor_queue_tests.test_full_queue_rejects_new_sample] duration = 0.001 seconds
+ - PASS - [sensor_queue_tests.test_ring_buffer_wraparound] duration = 0.001 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+PROJECT EXECUTION SUCCESSFUL

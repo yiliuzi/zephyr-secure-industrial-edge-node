@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "board": "mps2/an385",
+  "expected_tests": 18,
+  "passed_tests": 18,
+  "results": [
+    {
+      "suite": "safety",
+      "expected": 10,
+      "status": "PASS",
+      "passed": 10,
+      "failed": 0,
+      "skipped": 0,
+      "reason": "",
+      "total": 10
+    },
+    {
+      "suite": "sensor_queue",
+      "expected": 5,
+      "status": "PASS",
+      "passed": 5,
+      "failed": 0,
+      "skipped": 0,
+      "reason": "",
+      "total": 5
+    },
+    {
+      "suite": "pipeline",
+      "expected": 3,
+      "status": "PASS",
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0,
+      "reason": "",
+      "total": 3
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+*** Booting Zephyr OS build v4.4.2 ***
+Running TESTSUITE safety
+===================================================================
+START - test_fault_interrupts_recovery
+ PASS - test_fault_interrupts_recovery in 0.002 seconds
+===================================================================
+START - test_fault_overrides_warning
+ PASS - test_fault_overrides_warning in 0.001 seconds
+===================================================================
+START - test_five_normal_samples_required
+ PASS - test_five_normal_samples_required in 0.001 seconds
+===================================================================
+START - test_invalid_state_fails_safe
+ PASS - test_invalid_state_fails_safe in 0.001 seconds
+===================================================================
+START - test_state_names
+ PASS - test_state_names in 0.001 seconds
+===================================================================
+START - test_state_transition_table
+ PASS - test_state_transition_table in 0.001 seconds
+===================================================================
+START - test_temperature_boundaries
+ PASS - test_temperature_boundaries in 0.001 seconds
+===================================================================
+START - test_vibration_boundaries
+ PASS - test_vibration_boundaries in 0.001 seconds
+===================================================================
+START - test_voltage_boundaries
+ PASS - test_voltage_boundaries in 0.001 seconds
+===================================================================
+START - test_warning_interrupts_recovery
+ PASS - test_warning_interrupts_recovery in 0.001 seconds
+===================================================================
+TESTSUITE safety succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [safety]: pass = 10, fail = 0, skip = 0, total = 10 duration = 0.011 seconds
+ - PASS - [safety.test_fault_interrupts_recovery] duration = 0.002 seconds
+ - PASS - [safety.test_fault_overrides_warning] duration = 0.001 seconds
+ - PASS - [safety.test_five_normal_samples_required] duration = 0.001 seconds
+ - PASS - [safety.test_invalid_state_fails_safe] duration = 0.001 seconds
+ - PASS - [safety.test_state_names] duration = 0.001 seconds
+ - PASS - [safety.test_state_transition_table] duration = 0.001 seconds
+ - PASS - [safety.test_temperature_boundaries] duration = 0.001 seconds
+ - PASS - [safety.test_vibration_boundaries] duration = 0.001 seconds
+ - PASS - [safety.test_voltage_boundaries] duration = 0.001 seconds
+ - PASS - [safety.test_warning_interrupts_recovery] duration = 0.001 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+PROJECT EXECUTION SUCCESSFUL

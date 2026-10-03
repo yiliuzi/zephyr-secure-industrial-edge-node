@@ -1,0 +1,25 @@
+*** Booting Zephyr OS build v4.4.2 ***
+Running TESTSUITE pipeline
+===================================================================
+START - test_buffered_fault_interrupts_recovery
+ PASS - test_buffered_fault_interrupts_recovery in 0.003 seconds
+===================================================================
+START - test_complete_safety_cycle
+ PASS - test_complete_safety_cycle in 0.001 seconds
+===================================================================
+START - test_each_sensor_can_trigger_fault
+ PASS - test_each_sensor_can_trigger_fault in 0.001 seconds
+===================================================================
+TESTSUITE pipeline succeeded
+
+------ TESTSUITE SUMMARY START ------
+
+SUITE PASS - 100.00% [pipeline]: pass = 3, fail = 0, skip = 0, total = 3 duration = 0.005 seconds
+ - PASS - [pipeline.test_buffered_fault_interrupts_recovery] duration = 0.003 seconds
+ - PASS - [pipeline.test_complete_safety_cycle] duration = 0.001 seconds
+ - PASS - [pipeline.test_each_sensor_can_trigger_fault] duration = 0.001 seconds
+
+------ TESTSUITE SUMMARY END ------
+
+===================================================================
+PROJECT EXECUTION SUCCESSFUL
