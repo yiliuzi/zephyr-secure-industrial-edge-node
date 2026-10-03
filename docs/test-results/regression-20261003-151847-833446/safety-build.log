@@ -1,0 +1,12 @@
+[1/7] Building C object CMakeFiles/app.dir/D_/Users/pc/zephyr-secure-industrial-edge-node/app/src/safety_monitor.c.obj
+[2/7] Linking C static library app\libapp.a
+[3/7] Linking C executable zephyr\zephyr_pre0.elf; Logical command for additional byproducts on target: zephyr_pre0
+[4/7] Generating linker.cmd
+[5/7] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+[6/7] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+[7/7] Linking C executable zephyr\zephyr.elf
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       29552 B         4 MB      0.70%
+             RAM:       11008 B         4 MB      0.26%
+        IDT_LIST:           0 B        32 KB      0.00%
+Generating files from D:/Users/pc/zephyr-secure-industrial-edge-node/build/regression_safety/zephyr/zephyr.elf for board: mps2/an385
