@@ -1,0 +1,57 @@
+﻿# 自动化测试说明
+
+## 环境
+
+- Windows / PowerShell
+- Zephyr v4.4.2
+- QEMU：mps2-an385，Cortex-M3
+- Python 虚拟环境中已安装 west，并配置 Zephyr 构建工具链
+
+统一入口当前使用以下本地路径，换机器时需要修改：
+- Python：D:\zephyr-workspace\.venv313\Scripts\python.exe
+- Zephyr：D:\zephyr-workspace\zephyrproject\zephyr
+- QEMU：D:\qemu\qemu-system-arm.exe
+
+## 一键运行
+
+在项目根目录执行：
+
+```powershell
+.\scripts\run_all_checks.ps1
+```
+
+依次运行回归、正常运行冒烟、持续队列过载检查。
+任一检查失败时停止；全部通过时输出 ALL CHECKS PASSED。
+
+## 测试覆盖
+
+| 检查 | 覆盖范围 | 通过条件 |
+| --- | --- | --- |
+| safety：10 项 | 阈值边界、状态转换、恢复条件、非法状态 | 10 项通过，无失败或跳过 |
+| sensor_queue：5 项 | 数据复制、空队列、FIFO、满队列拒绝、环绕 | 5 项通过，无失败或跳过 |
+| pipeline：3 项 | 完整安全周期、传感器故障、恢复中故障打断 | 3 项通过，无失败或跳过 |
+| runtime_smoke | 30 秒正常运行、样本值与序号、状态转换 | 至少 80 个样本，转换符合预期，无运行错误 |
+| queue_overload | 200 ms 采样、800 ms 处理延迟、容量 8 | 至少 5 次丢样、10 个处理样本，丢样后继续处理，无运行错误 |
+
+过载测试使用独立构建目录。默认应用处理延迟为 0。
+队列满时拒绝新样本并记录告警，因此过载测试中的丢样属于预期现象。
+
+## 报告
+
+每次运行在以下目录生成带时间戳的日志与 JSON/Markdown 摘要：
+
+- build/regression_reports/
+- build/runtime_reports/
+- build/overload_reports/
+
+已提交的通过报告：
+
+- [18 项回归报告](test-results/regression-20261003-151847-833446/summary.md)
+- [正常运行报告](test-results/runtime-20261003-144436-907848/summary.md)
+- [持续过载报告](test-results/overload-20261003-153113-035163/summary.md)
+
+## 验证范围
+
+当前结果来自 QEMU。
+尚未验证真实硬件时序、长期稳定性、过载解除后的队列恢复，
+也未证明过载条件下故障响应时间满足安全要求。
