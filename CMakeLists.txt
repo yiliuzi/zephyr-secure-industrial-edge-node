@@ -13,3 +13,6 @@ target_sources(app PRIVATE
     app/src/sensor_simulator.c
     app/src/safety_monitor.c
 )
+if(DEFINED SAFETY_PROCESS_DELAY_MS)
+    target_compile_definitions(app PRIVATE SAFETY_PROCESS_DELAY_MS=${SAFETY_PROCESS_DELAY_MS})
+endif()

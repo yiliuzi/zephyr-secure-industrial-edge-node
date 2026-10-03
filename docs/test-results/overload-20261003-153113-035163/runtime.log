@@ -1,0 +1,143 @@
+*** Booting Zephyr OS build v4.4.2 ***
+[00:00:00.000,000] [0m<inf> edge_node: Secure Industrial Edge Node starting[0m
+[00:00:00.000,000] [0m<inf> edge_node: Sensor simulator initialized[0m
+[00:00:00.000,000] [0m<inf> edge_node: Safety monitor initialized[0m
+[00:00:00.000,000] [0m<inf> safety_monitor: sample=0 temp=2500 cC vibration=200 mg voltage=24000 mV[0m
+[00:00:00.810,000] [0m<inf> safety_monitor: sample=1 temp=2510 cC vibration=210 mg voltage=24000 mV[0m
+[00:00:01.620,000] [0m<inf> safety_monitor: sample=2 temp=2520 cC vibration=220 mg voltage=24000 mV[0m
+[00:00:02.310,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 11[0m
+[00:00:02.430,000] [0m<inf> safety_monitor: sample=3 temp=2530 cC vibration=230 mg voltage=24000 mV[0m
+[00:00:02.730,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 13[0m
+[00:00:02.940,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 14[0m
+[00:00:03.150,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 15[0m
+[00:00:03.240,000] [0m<inf> safety_monitor: sample=4 temp=2540 cC vibration=200 mg voltage=24000 mV[0m
+[00:00:03.570,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 17[0m
+[00:00:03.780,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 18[0m
+[00:00:03.990,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 19[0m
+[00:00:04.050,000] [0m<inf> safety_monitor: sample=5 temp=2500 cC vibration=210 mg voltage=24000 mV[0m
+[00:00:04.410,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 21[0m
+[00:00:04.620,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 22[0m
+[00:00:04.830,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 23[0m
+[00:00:04.860,000] [0m<inf> safety_monitor: sample=6 temp=2510 cC vibration=220 mg voltage=24000 mV[0m
+[00:00:05.250,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 25[0m
+[00:00:05.460,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 26[0m
+[00:00:05.670,000] [0m<inf> safety_monitor: sample=7 temp=2520 cC vibration=230 mg voltage=24000 mV[0m
+[00:00:05.880,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 28[0m
+[00:00:06.090,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 29[0m
+[00:00:06.300,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 30[0m
+[00:00:06.480,000] [0m<inf> safety_monitor: sample=8 temp=2530 cC vibration=200 mg voltage=24000 mV[0m
+[00:00:06.720,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 32[0m
+[00:00:06.930,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 33[0m
+[00:00:07.140,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 34[0m
+[00:00:07.290,000] [0m<inf> safety_monitor: sample=9 temp=2540 cC vibration=210 mg voltage=24000 mV[0m
+[00:00:07.560,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 36[0m
+[00:00:07.770,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 37[0m
+[00:00:07.980,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 38[0m
+[00:00:08.100,000] [0m<inf> safety_monitor: sample=10 temp=2500 cC vibration=220 mg voltage=24000 mV[0m
+[00:00:08.400,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 40[0m
+[00:00:08.610,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 41[0m
+[00:00:08.820,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 42[0m
+[00:00:08.910,000] [0m<inf> safety_monitor: sample=12 temp=2520 cC vibration=200 mg voltage=24000 mV[0m
+[00:00:09.240,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 44[0m
+[00:00:09.450,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 45[0m
+[00:00:09.660,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 46[0m
+[00:00:09.720,000] [0m<inf> safety_monitor: sample=16 temp=2510 cC vibration=200 mg voltage=24000 mV[0m
+[00:00:10.080,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 48[0m
+[00:00:10.290,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 49[0m
+[00:00:10.500,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 50[0m
+[00:00:10.530,000] [0m<inf> safety_monitor: sample=20 temp=7400 cC vibration=1700 mg voltage=21800 mV[0m
+[00:00:10.530,000] [1;33m<wrn> safety_monitor: Safety transition: NORMAL -> WARNING[0m
+[00:00:10.920,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 52[0m
+[00:00:11.130,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 53[0m
+[00:00:11.340,000] [0m<inf> safety_monitor: sample=24 temp=7400 cC vibration=1700 mg voltage=21800 mV[0m
+[00:00:11.550,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 55[0m
+[00:00:11.760,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 56[0m
+[00:00:11.970,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 57[0m
+[00:00:12.150,000] [0m<inf> safety_monitor: sample=27 temp=7400 cC vibration=1700 mg voltage=21800 mV[0m
+[00:00:12.390,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 59[0m
+[00:00:12.600,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 60[0m
+[00:00:12.810,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 61[0m
+[00:00:12.960,000] [0m<inf> safety_monitor: sample=31 temp=9200 cC vibration=3200 mg voltage=20500 mV[0m
+[00:00:12.960,000] [1;33m<wrn> safety_monitor: Safety transition: WARNING -> FAULT[0m
+[00:00:13.230,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 63[0m
+[00:00:13.440,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 64[0m
+[00:00:13.650,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 65[0m
+[00:00:13.770,000] [0m<inf> safety_monitor: sample=35 temp=4200 cC vibration=500 mg voltage=23500 mV[0m
+[00:00:13.770,000] [1;33m<wrn> safety_monitor: Safety transition: FAULT -> RECOVERY[0m
+[00:00:14.070,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 67[0m
+[00:00:14.280,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 68[0m
+[00:00:14.490,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 69[0m
+[00:00:14.580,000] [0m<inf> safety_monitor: sample=39 temp=4200 cC vibration=500 mg voltage=23500 mV[0m
+[00:00:14.910,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 71[0m
+[00:00:15.120,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 72[0m
+[00:00:15.330,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 73[0m
+[00:00:15.390,000] [0m<inf> safety_monitor: sample=43 temp=2530 cC vibration=230 mg voltage=24000 mV[0m
+[00:00:15.750,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 75[0m
+[00:00:15.960,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 76[0m
+[00:00:16.170,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 77[0m
+[00:00:16.200,000] [0m<inf> safety_monitor: sample=47 temp=2520 cC vibration=230 mg voltage=24000 mV[0m
+[00:00:16.590,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 79[0m
+[00:00:16.800,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 80[0m
+[00:00:17.010,000] [0m<inf> safety_monitor: sample=51 temp=2510 cC vibration=230 mg voltage=24000 mV[0m
+[00:00:17.010,000] [1;33m<wrn> safety_monitor: Safety transition: RECOVERY -> NORMAL[0m
+[00:00:17.220,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 82[0m
+[00:00:17.430,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 83[0m
+[00:00:17.640,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 84[0m
+[00:00:17.820,000] [0m<inf> safety_monitor: sample=54 temp=2540 cC vibration=220 mg voltage=24000 mV[0m
+[00:00:18.060,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 86[0m
+[00:00:18.270,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 87[0m
+[00:00:18.480,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 88[0m
+[00:00:18.630,000] [0m<inf> safety_monitor: sample=58 temp=2530 cC vibration=220 mg voltage=24000 mV[0m
+[00:00:18.900,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 90[0m
+[00:00:19.110,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 91[0m
+[00:00:19.320,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 92[0m
+[00:00:19.440,000] [0m<inf> safety_monitor: sample=62 temp=7400 cC vibration=1700 mg voltage=21800 mV[0m
+[00:00:19.440,000] [1;33m<wrn> safety_monitor: Safety transition: NORMAL -> WARNING[0m
+[00:00:19.740,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 94[0m
+[00:00:19.950,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 95[0m
+[00:00:20.160,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 96[0m
+[00:00:20.250,000] [0m<inf> safety_monitor: sample=66 temp=7400 cC vibration=1700 mg voltage=21800 mV[0m
+[00:00:20.580,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 98[0m
+[00:00:20.790,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 99[0m
+[00:00:21.000,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 100[0m
+[00:00:21.060,000] [0m<inf> safety_monitor: sample=70 temp=9200 cC vibration=3200 mg voltage=20500 mV[0m
+[00:00:21.060,000] [1;33m<wrn> safety_monitor: Safety transition: WARNING -> FAULT[0m
+[00:00:21.420,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 102[0m
+[00:00:21.630,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 103[0m
+[00:00:21.840,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 104[0m
+[00:00:21.870,000] [0m<inf> safety_monitor: sample=74 temp=4200 cC vibration=500 mg voltage=23500 mV[0m
+[00:00:21.870,000] [1;33m<wrn> safety_monitor: Safety transition: FAULT -> RECOVERY[0m
+[00:00:22.260,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 106[0m
+[00:00:22.470,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 107[0m
+[00:00:22.680,000] [0m<inf> safety_monitor: sample=78 temp=4200 cC vibration=500 mg voltage=23500 mV[0m
+[00:00:22.890,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 109[0m
+[00:00:23.100,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 110[0m
+[00:00:23.310,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 111[0m
+[00:00:23.490,000] [0m<inf> safety_monitor: sample=81 temp=2510 cC vibration=210 mg voltage=24000 mV[0m
+[00:00:23.730,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 113[0m
+[00:00:23.940,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 114[0m
+[00:00:24.150,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 115[0m
+[00:00:24.300,000] [0m<inf> safety_monitor: sample=85 temp=2500 cC vibration=210 mg voltage=24000 mV[0m
+[00:00:24.570,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 117[0m
+[00:00:24.780,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 118[0m
+[00:00:24.990,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 119[0m
+[00:00:25.110,000] [0m<inf> safety_monitor: sample=89 temp=2540 cC vibration=210 mg voltage=24000 mV[0m
+[00:00:25.110,000] [1;33m<wrn> safety_monitor: Safety transition: RECOVERY -> NORMAL[0m
+[00:00:25.410,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 121[0m
+[00:00:25.620,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 122[0m
+[00:00:25.830,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 123[0m
+[00:00:25.920,000] [0m<inf> safety_monitor: sample=93 temp=2530 cC vibration=210 mg voltage=24000 mV[0m
+[00:00:26.250,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 125[0m
+[00:00:26.460,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 126[0m
+[00:00:26.670,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 127[0m
+[00:00:26.730,000] [0m<inf> safety_monitor: sample=97 temp=2520 cC vibration=210 mg voltage=24000 mV[0m
+[00:00:27.090,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 129[0m
+[00:00:27.300,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 130[0m
+[00:00:27.510,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 131[0m
+[00:00:27.540,000] [0m<inf> safety_monitor: sample=101 temp=7400 cC vibration=1700 mg voltage=21800 mV[0m
+[00:00:27.540,000] [1;33m<wrn> safety_monitor: Safety transition: NORMAL -> WARNING[0m
+[00:00:27.930,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 133[0m
+[00:00:28.140,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 134[0m
+[00:00:28.350,000] [0m<inf> safety_monitor: sample=105 temp=7400 cC vibration=1700 mg voltage=21800 mV[0m
+[00:00:28.560,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 136[0m
+[00:00:28.770,000] [1;33m<wrn> sensor_simulator: Queue full: dropped sample 137[0m

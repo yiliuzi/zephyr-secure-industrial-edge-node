@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "observation_seconds": 30,
+  "processing_delay_ms": 800,
+  "sensor_period_ms": 200,
+  "queue_capacity": 8,
+  "processed_samples": 36,
+  "queue_full_events": 94,
+  "processing_continued_after_drop": true,
+  "errors": [],
+  "scope": "QEMU sustained queue overload; no recovery or hardware timing claim"
+}
