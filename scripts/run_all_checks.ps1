@@ -32,6 +32,11 @@ try {
         throw "Queue overload test failed."
     }
 
+    & $python .\scripts\run_queue_recovery.py
+    if ($LASTEXITCODE -ne 0) {
+        throw "Queue recovery test failed."
+    }
+
     Write-Host "`nALL CHECKS PASSED" -ForegroundColor Green
 }
 finally {

@@ -1,0 +1,41 @@
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base (cached)).
+-- Application: D:/Users/pc/zephyr-secure-industrial-edge-node
+-- CMake version: 4.4.3
+-- Cache files will be written to: D:/zephyr-workspace/zephyrproject/zephyr/.cache
+-- Zephyr version: 4.4.2 (D:/zephyr-workspace/zephyrproject/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: mps2, qualifiers: an385
+-- Found host-tools: zephyr 1.0.1 (D:/zephyr-workspace/zephyr-sdk-1.0.1)
+-- Found toolchain: zephyr 1.0.1 (D:/zephyr-workspace/zephyr-sdk-1.0.1)
+-- Could NOT find Dtc (missing: DTC) (Required is at least version "1.4.6")
+Hint: The project() command has not yet been called.  It sets up system-specific search paths.
+-- Found BOARD.dts: D:/zephyr-workspace/zephyrproject/zephyr/boards/arm/mps2/mps2_an385.dts
+-- Generated zephyr.dts: D:/Users/pc/zephyr-secure-industrial-edge-node/build/runtime_recovery/zephyr/zephyr.dts
+-- Generated pickled edt: D:/Users/pc/zephyr-secure-industrial-edge-node/build/runtime_recovery/zephyr/edt.pickle
+-- Generated devicetree_generated.h: D:/Users/pc/zephyr-secure-industrial-edge-node/build/runtime_recovery/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing D:/zephyr-workspace/zephyrproject/zephyr/Kconfig
+Loaded configuration 'D:/Users/pc/zephyr-secure-industrial-edge-node/build/runtime_recovery/zephyr/.config'
+No change to configuration in 'D:/Users/pc/zephyr-secure-industrial-edge-node/build/runtime_recovery/zephyr/.config'
+No change to Kconfig header in 'D:/Users/pc/zephyr-secure-industrial-edge-node/build/runtime_recovery/zephyr/include/generated/zephyr/autoconf.h'
+-- Found gen_kobject_list: D:/zephyr-workspace/zephyrproject/zephyr/scripts/build/gen_kobject_list.py
+CMake Warning at D:/zephyr-workspace/zephyrproject/zephyr/CMakeLists.txt:2343 (message):
+  __ASSERT() statements are globally ENABLED
+
+
+-- Configuring done (8.0s)
+-- Generating done (0.4s)
+-- Build files have been written to: D:/Users/pc/zephyr-secure-industrial-edge-node/build/runtime_recovery
+-- west build: building application
+[1/127] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[2/7] Generating linker_zephyr_pre0.cmd
+[3/7] Linking C executable zephyr\zephyr_pre0.elf; Logical command for additional byproducts on target: zephyr_pre0
+[4/7] Generating linker.cmd
+[5/7] Generating isr_tables.c, isr_tables_vt.ld, isr_tables_swi.ld
+[6/7] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+[7/7] Linking C executable zephyr\zephyr.elf
+Memory region         Used Size  Region Size  %age Used
+           FLASH:       36208 B         4 MB      0.86%
+             RAM:       13320 B         4 MB      0.32%
+        IDT_LIST:           0 B        32 KB      0.00%
+Generating files from D:/Users/pc/zephyr-secure-industrial-edge-node/build/runtime_recovery/zephyr/zephyr.elf for board: mps2/an385

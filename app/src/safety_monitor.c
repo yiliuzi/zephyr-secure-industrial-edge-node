@@ -14,6 +14,10 @@ LOG_MODULE_REGISTER(safety_monitor, LOG_LEVEL_INF);
 #define SAFETY_PROCESS_DELAY_MS 0
 #endif
 
+#ifndef SAFETY_DELAY_RELEASE_MS
+#define SAFETY_DELAY_RELEASE_MS 0
+#endif
+
 #define RECOVERY_REQUIRED_SAMPLES 5U
 
 #define TEMP_WARNING_CENTI_C 7000
@@ -150,6 +154,9 @@ static void safety_thread(
 
     enum safety_state state = SAFETY_NORMAL;
     uint32_t recovery_samples = 0U;
+#if SAFETY_PROCESS_DELAY_MS > 0 && SAFETY_DELAY_RELEASE_MS > 0
+    bool delay_released = false;
+#endif
 
     while (true) {
         struct sensor_sample sample;
@@ -194,7 +201,16 @@ static void safety_thread(
         }
 
 #if SAFETY_PROCESS_DELAY_MS > 0
+#if SAFETY_DELAY_RELEASE_MS > 0
+        if (k_uptime_get() < SAFETY_DELAY_RELEASE_MS) {
+            k_msleep(SAFETY_PROCESS_DELAY_MS);
+        } else if (!delay_released) {
+            delay_released = true;
+            LOG_INF("Overload injection released");
+        }
+#else
         k_msleep(SAFETY_PROCESS_DELAY_MS);
+#endif
 #endif
     }
 }

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "observation_wall_seconds": 30,
+  "processing_delay_ms": 800,
+  "release_target_uptime_ms": 10000,
+  "release_times_seconds": [
+    10.53
+  ],
+  "settling_seconds": 2,
+  "drops_before_release": 30,
+  "drops_after_settling": 0,
+  "samples_after_settling": 81,
+  "errors": [],
+  "scope": "QEMU queue recovery inferred from drops and processed sequences"
+}

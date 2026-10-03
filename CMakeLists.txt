@@ -16,3 +16,7 @@ target_sources(app PRIVATE
 if(DEFINED SAFETY_PROCESS_DELAY_MS)
     target_compile_definitions(app PRIVATE SAFETY_PROCESS_DELAY_MS=${SAFETY_PROCESS_DELAY_MS})
 endif()
+
+if(DEFINED SAFETY_DELAY_RELEASE_MS)
+    target_compile_definitions(app PRIVATE SAFETY_DELAY_RELEASE_MS=${SAFETY_DELAY_RELEASE_MS})
+endif()
