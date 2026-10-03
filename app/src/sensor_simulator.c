@@ -15,6 +15,7 @@ K_MSGQ_DEFINE(
     SENSOR_QUEUE_DEPTH,
     4
 );
+#ifndef SENSOR_UNIT_TEST
 
 static struct sensor_sample generate_simulated_sample(uint32_t sequence)
 {
@@ -92,3 +93,4 @@ K_THREAD_DEFINE(
     0,
     0
 );
+#endif /* SENSOR_UNIT_TEST */
