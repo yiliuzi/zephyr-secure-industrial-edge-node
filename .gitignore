@@ -1,0 +1,23 @@
+# Zephyr build outputs
+build/
+twister-out/
+*.elf
+*.bin
+*.hex
+*.map
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Generated reports
+reports/
