@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "observation_seconds": 30,
+  "sample_count": 141,
+  "first_sequence": 0,
+  "last_sequence": 140,
+  "transition_counts": {
+    "NORMAL -> WARNING": 4,
+    "WARNING -> FAULT": 3,
+    "FAULT -> RECOVERY": 3,
+    "RECOVERY -> NORMAL": 3
+  },
+  "errors": [],
+  "scope": "QEMU runtime smoke test with application threads enabled"
+}
