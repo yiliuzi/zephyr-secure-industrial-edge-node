@@ -10,6 +10,9 @@ LOG_MODULE_REGISTER(safety_monitor, LOG_LEVEL_INF);
 
 #define SAFETY_STACK_SIZE 1536
 #define SAFETY_PRIORITY 4
+#ifndef SAFETY_PROCESS_DELAY_MS
+#define SAFETY_PROCESS_DELAY_MS 0
+#endif
 
 #define RECOVERY_REQUIRED_SAMPLES 5U
 
@@ -189,6 +192,10 @@ static void safety_thread(
 
             state = next_state;
         }
+
+#if SAFETY_PROCESS_DELAY_MS > 0
+        k_msleep(SAFETY_PROCESS_DELAY_MS);
+#endif
     }
 }
 
