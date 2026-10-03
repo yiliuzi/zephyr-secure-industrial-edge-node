@@ -15,6 +15,7 @@ foreach ($path in @(
     }
 }
 
+$batchStart = Get-Date -Format "yyyyMMdd-HHmmss-ffffff"
 Push-Location $projectRoot
 try {
     & $python .\scripts\run_regression.py --qemu $qemu --timeout 60
@@ -40,5 +41,13 @@ try {
     Write-Host "`nALL CHECKS PASSED" -ForegroundColor Green
 }
 finally {
-    Pop-Location
+    try {
+        & $python .\scripts\generate_test_report.py --since $batchStart
+        if ($LASTEXITCODE -ne 0) {
+            Write-Warning "Combined report contains failed or missing checks."
+        }
+    }
+    finally {
+        Pop-Location
+    }
 }
