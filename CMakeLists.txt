@@ -10,4 +10,6 @@ target_include_directories(app PRIVATE
 
 target_sources(app PRIVATE
     app/src/main.c
+    app/src/sensor_simulator.c
+    app/src/safety_monitor.c
 )
